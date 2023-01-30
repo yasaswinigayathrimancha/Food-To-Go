@@ -1,0 +1,209 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    height: 60px;
+  }
+  
+  .Navbar-content {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .Navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .Navbar-add-item-button {
+    background-color: #00bfff;
+    color:white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .Navbar-add-item-form {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .Navbar-add-item-form.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .Navbar-add-item-form-content {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Navbar-add-item-form-content label {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .Navbar-add-item-form-content input[type="text"],
+  .Navbar-add-item-form-content input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 8px;
+    box-sizing: border-box;
+  }
+  
+  .Navbar-add-item-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .Navbar-add-item-form-actions button {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .Orders {
+    margin: 20px;
+  }
+  
+  .Orders table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .Orders th,
+  .Orders td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .Orders th {
+    background-color: #f2f2f2;
+  }
+  
+  .Orders button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .Orders-update-status-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .Orders-update-status-form.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .Orders-update-status-form-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Orders-update-status-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .modal-body form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modal-body form .form-group {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .modal-body form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .modal-body form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-body form input[readonly] {
+    background-color: #f2f2f2;
+  }
+  
+  .modal-body form button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .modal-body form button:hover {
+    background-color: #45a049;
+  }

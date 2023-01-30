@@ -1,0 +1,22 @@
+.container {
+    background-image: url('https://png.pngtree.com/background/20211217/original/pngtree-aesthetic-plain-background-with-pastel-colors-picture-image_1596087.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .addToCart_btn{
+    background-color: black;
+    color: white;
+    padding: 20px 60px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .itemprice{
+    color:blue;
+    
+  }
+
+  .itemname{
+    color:red;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
