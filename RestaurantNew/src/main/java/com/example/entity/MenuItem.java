@@ -9,17 +9,17 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 
-
 @Entity
 @Table(name = "itemstablenew1")
 
 public class MenuItem {
 	
-	  @Id
-	  @GeneratedValue(strategy = GenerationType.SEQUENCE)
+     @Id
+	 @GeneratedValue(strategy = GenerationType.SEQUENCE)
      @Column(name="itemId")
 	  private Integer id;
-	  private String name;
+	  
+	    private String name;
 	    private String imageUrl;
 	    private Integer price;
 	    private String availability;
