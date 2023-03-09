@@ -5,11 +5,11 @@
     background-position: center;
   }
   .addToCart_btn{
-    background-color: black;
+    background-color: teal;
     color: white;
-    padding: 20px 60px;
+    padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration:double;
   }
   .itemprice{
     color:blue;

@@ -146,6 +146,8 @@ const handleSubmit = event => {
 
     <div className="Navbar">
       <div className="Navbar-content">
+      <img src='https://media.istockphoto.com/id/1038356020/vector/restaurant-icon.jpg?s=612x612&w=0&k=20&c=Tk_v3JuJA4lz_8ZRJi78xS4p75Idqt97uEtYJciVtFI=' alt='' width="50" height="50"></img>
+
         <div className="Navbar-title"><h2>FOOD TO GO</h2></div>
         <button className="Navbar-add-item-button" onClick={handleAddItemClick}>Add Item</button>
       </div>

@@ -62,10 +62,10 @@ import axios from 'axios';
 
       <>
          <nav className="navbar">
-              
+              <img src='https://media.istockphoto.com/id/1038356020/vector/restaurant-icon.jpg?s=612x612&w=0&k=20&c=Tk_v3JuJA4lz_8ZRJi78xS4p75Idqt97uEtYJciVtFI=' alt='' width="50" height="50"></img>
          <div className="nav-title">Food To Go</div>
       <div className="nav-links">
-    🤩click here to see available
+        🤩click here to see available
        <Button className='restrolist-btn'>    <Link to="/RestroList"><b>RESTAURANTS</b></Link>   </Button>
       </div>   
       <div className="search-container">
@@ -102,7 +102,7 @@ import axios from 'axios';
                                
                                       
                                     <li key={items.id}> </li>
-                                        <img src = {items.imageUrl}   width = '300' height = '250' />
+                                        <img src = {items.imageUrl} alt=''   width = '300' height = '250' />
                                     </div>
                                 </div>
                                 <div className='col-md-4'>
@@ -113,7 +113,7 @@ import axios from 'axios';
                                         <h3 className='itemprice'>₹{items.price}</h3>
                                         <h3 className='avail'>{items.availability}</h3>
                                         <button className="addToCart_btn" variant="outline-success">
-                                        <b>  ADD TO CART </b> 
+                                        ADD TO CART
                                         </button>
                                   
                                 </div>

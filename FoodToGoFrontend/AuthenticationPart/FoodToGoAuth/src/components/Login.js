@@ -89,7 +89,7 @@ const Login = () => {
           alt="profile-img"
           className="profile-img-card"
         />
-<div>
+         <div>
         <Form onSubmit={handleLogin} ref={form}>
           <div className="form-group">
             <label htmlFor="username">Username</label>
@@ -101,9 +101,7 @@ const Login = () => {
               onChange={onChangeUsername}
               validations={[required]}
             />
-          </div>
-
-          <div className="form-group">
+          
             <label htmlFor="password">Password</label>
             <Input
               type="password"
@@ -113,9 +111,7 @@ const Login = () => {
               onChange={onChangePassword}
               validations={[required]}
             />
-          </div>
-
-          <div className="form-group">
+          <br></br>
             <button className="btn btn-primary btn-block" disabled={loading}>
               {loading && (
                 <span className="spinner-border spinner-border-sm"></span>

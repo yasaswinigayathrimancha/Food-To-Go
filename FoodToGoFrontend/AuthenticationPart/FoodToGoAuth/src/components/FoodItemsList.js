@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import axios from 'axios';
 import "../App.css";
 import FoodItems from './FoodItems.css'
@@ -55,23 +55,22 @@ export default function FoodItemsList(){
                             <div className='col-md-4'>
                             
                            
-                                 
-                                <li key={items.id}> </li>
-                                    <img src = {items.imageUrl} 
-                                    width = '600'
-                                    height = '450'
-                                    />
                                 </div>
                             </div>
                             <div className='col-md-4'>
                                 <div className='card-body'>
+                                <li key={items.id}> </li>
+                                    <img src = {items.imageUrl}  alt=""
+                                    width = '400'
+                                    height = '300'
+                                    />
                                     <h2 className='itemname'>
                                         {items.name}
                                     </h2>
                                     <h3 className='itemprice'>₹{items.price}</h3>
                                     <h3 className='avail'>{items.availability}</h3>
                                     <button  onClick={handleClick}  className="addToCart_btn" variant="outline-success">
-                                       <b>  ADD TO CART </b> 
+                                    ADD TO CART 
                                     </button>
                               
                             </div>
