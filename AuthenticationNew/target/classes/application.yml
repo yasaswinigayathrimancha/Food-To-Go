@@ -1,0 +1,27 @@
+server:
+    port: 8788
+        
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: sys as sysdba
+    password: admin@123
+    driver-class-name: oracle.jdbc.OracleDriver
+  cors:
+    allowed-origins: "*"
+    allowed-methods: GET, POST, PUT, DELETE,UPDATE, OPTIONS
+    allowed-headers: "*"
+    allow-credentials: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      
+food:
+  app:
+    jwtSecret : foodSecretKey
+    jwtExpirationMs : 60480000
+      
+spring.application.name : auth-service
+       
+debug: true
