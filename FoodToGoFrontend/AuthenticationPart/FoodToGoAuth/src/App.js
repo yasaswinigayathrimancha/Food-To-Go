@@ -2,16 +2,23 @@ import React, { useState, useEffect ,Component} from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import RestroList from "./components/RestroList";
+import CustomerRestroList from "./components/CustomerRestroList";
 import AuthService from "./services/auth.service";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
-import Restaurantownerview  from "./components/Restaurantownerview";
+import Restroview  from "./components/RestroView";
 import EventBus from "./common/EventBus";
-import Mainpage from "./components/Mainpage";
-import FoodItemsList from "./components/FoodItemsList";
+import CustomerView from './components/CustomerView';
+import CustomerFoodItemsList from "./components/CustomerFoodItemsList";
+import RestroAddItem from "./components/RestroAddItem";
+import RestroViewItems from "./components/RestroViewItems";
+import RestroEditItem from "./components/RestroEditItem";
+import RestroEditStatus from "./components/RestroEditStatus";
+import CustomerItemSearch from "./components/CustomerItemSearch";
+import CustomerRestroSearch from "./components/CustomerRestroSearch";
+import RestroViewOrders from "./components/RestroViewOrders";
 
 
 
@@ -86,11 +93,18 @@ const App = () => {
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register/>} />
           <Route path="/profile" element={<Profile/>} />
-          <Route path="/Mainpage" element={<Mainpage/>} />
-          <Route path="/Restaurantownerview" element={<Restaurantownerview/>} />
-          <Route path="/RestroList" element={<RestroList />} />
-          <Route exact path = "/FoodItemsList/:id" element = {<FoodItemsList />} />
-        
+          <Route path="/Restroview" element={<Restroview/>} />
+          <Route path="/RestroAddItem" element={<RestroAddItem />} />
+          <Route path="/RestroViewItems" element={<RestroViewItems />} />
+          <Route path="/RestroViewOrders" element={<RestroViewOrders />} />
+          <Route path="/RestroEditItem/:id" element={<RestroEditItem />} />
+          <Route path="/RestroEditStatus/:orderId" element={<RestroEditStatus />} />
+          <Route path="/CustomerView" element={<CustomerView/>} />
+          <Route path="/CustomerRestroList" element={<CustomerRestroList />} />
+          <Route exact path = "/CustomerFoodItemsList/:id" element = {<CustomerFoodItemsList />} />
+          <Route path="/CustomerItemSearch" element ={<CustomerItemSearch/>}/>
+          <Route path="/CustomerRestroSearch" element={<CustomerRestroSearch />} />
+
 
         </Routes>
     

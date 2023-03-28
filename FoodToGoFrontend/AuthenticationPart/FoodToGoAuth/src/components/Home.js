@@ -15,11 +15,11 @@ const Home = () => {
 
   return (
     <div className="container">
-          <center>
+          <center> <img src='https://media.istockphoto.com/id/1038356020/vector/restaurant-icon.jpg?s=612x612&w=0&k=20&c=Tk_v3JuJA4lz_8ZRJi78xS4p75Idqt97uEtYJciVtFI=' alt='' width="50" height="50"></img>
                <h2>Welcome to FOOD TO GO </h2>
                <p>You must have to signin first to view our content</p>
                </center>
-               <>
+              
                  
       <center>
       <Carousel activeIndex={index} onSelect={handleSelect} className="carousel">    
@@ -27,7 +27,7 @@ const Home = () => {
         <img className="carousel-img" src="https://www.thespruceeats.com/thmb/t6W9k4xfnv7WO7MaIqJ3j3AkQuo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-520408549-200bf773660f445c944053358cd90858.jpg" alt="Slide 1" />
         <Carousel.Caption>
           <h3>Hello Foodie</h3>
-          <p>Check out our foodsitems once</p>
+          <p>Check out our fooditems once</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -47,7 +47,7 @@ const Home = () => {
      </Carousel>
      </center>
 
-               </>
+              
 
     </div>
   );

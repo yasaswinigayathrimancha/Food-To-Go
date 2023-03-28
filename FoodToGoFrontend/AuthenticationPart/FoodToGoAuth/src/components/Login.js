@@ -4,8 +4,8 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import AuthService from "../services/auth.service";
-import Mainpage from "./Mainpage";
-import { Restaurantownerview } from "./Restaurantownerview";
+import CustomerView from './CustomerView';
+import { RestroView } from "./RestroView";
 
 const required = (value) => {
   if (!value) {
@@ -52,10 +52,10 @@ const Login = () => {
           const user = AuthService.getCurrentUser();
           console.log(user);
           if (user.roles.includes("CONSUMER")) {
-            navigate("/Mainpage");
+            navigate("/CustomerView");
             window.location.reload();
           } else if (user.roles.includes("RESTAURANTOWNER")) {
-            navigate("/Restaurantownerview");
+            navigate("/Restroview");
             window.location.reload();
           }
           else {

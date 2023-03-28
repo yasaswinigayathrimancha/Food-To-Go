@@ -13,8 +13,15 @@
     border-radius: 5px;
     text-decoration: none;
   }
+  .goback1{
+    background-color:black;
+    color: white;
+    padding: 1px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
   .restrolist-btn{
-    background-color: rgb(210, 23, 110);
+    background-color:bisque;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -64,12 +71,12 @@
   .button-29 {
     align-items: center;
     appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    background-image: radial-gradient(100% 100% at 100% 0, #5aff94 0, rgb(255, 219, 192) 100%);
     border: 0;
     border-radius: 6px;
     box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
     box-sizing: border-box;
-    color: #fff;
+    color: rgb(22, 4, 52);
     cursor: pointer;
     display: inline-flex;
     font-family: "JetBrains Mono",monospace;
@@ -102,10 +109,9 @@
   }
 
   .background-image{
-    background-image: url('https://png.pngtree.com/background/20211217/original/pngtree-aesthetic-plain-background-with-pastel-colors-picture-image_1596087.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/268/924/1024/blur-simple-background-hd-background-wallpaper-preview.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
   }
   form {
     display: flex;
@@ -142,24 +148,30 @@
   
   .search-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: auto; /* align search bars to the right */
-    gap: 10px; /* small gap between search bars */
+    gap:2px ;/* small gap between search bars */
     
   }
   
   .item-search, .restaurant-search {
     display: flex;
+    justify-content: center;
+
     align-items: center;
   }
   
   .item-search input, .restaurant-search input {
     padding: 10px;
     font-size: 1.2em; /* big font size */
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+  border-radius: 5px;
   }
   
   .search-results {
-    display: flex;
+    display:flex;
     align-items: center;
     margin-left: auto; /* align results to the right */
     gap: 10px; /* small gap between results */
@@ -168,16 +180,131 @@
   .search-result-button {
     background-color: #3f51b5; /* color for the button */
     color: white;
-    padding: 10px;
+    padding: 5px;
     border: none;
     font-size: 1.2em; /* big font size */
     text-decoration: none; /* no underline */
   }
 
   .searchbutton{
-    background-color: pink;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+    height: 100%;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
   }
+  .card-item {
+    width: 400px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-item img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .item-price {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .item-availability {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #230428;
+  }
+  
+  
+
+  .addToCart_btn {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5aff94 0, rgb(255, 219, 192) 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: rgb(22, 4, 52);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .addToCart_btn:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  .addToCart_btn:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+
+
+
+  .card-content h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .card-content p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  .card-item1 {
+    width: 400px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  .card-item2{
+    width: 400px;
+    height: 350px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
