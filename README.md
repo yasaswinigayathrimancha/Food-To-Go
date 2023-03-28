@@ -1,1 +1,1 @@
-Frontend is in master branch, Bckend is in main branch
+Frontend is in master branch, Backend is in main branch
