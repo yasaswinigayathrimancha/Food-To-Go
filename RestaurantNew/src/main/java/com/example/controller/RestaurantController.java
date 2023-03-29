@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.entity.MenuItem;
 import com.example.entity.Restaurant;
+import com.example.exceptionhandling.MenuItemException;
 import com.example.exceptionhandling.RestaurantException;
 import com.example.service.RestaurantServiceImpl;
 
@@ -20,14 +23,15 @@ public class RestaurantController {
 	private RestaurantServiceImpl restaurantServiceImpl;
 	
 	
-	@GetMapping("/{restaurantName}")
-    public Restaurant findRestaurant(@PathVariable("restaurantName") String restaurantName) throws RestaurantException {
-		Restaurant restaurant = restaurantServiceImpl.searchRestaurantByName(restaurantName);
+	@GetMapping("/{restaurantName}")        //working
+    public List<Restaurant> findRestaurant(@PathVariable("restaurantName") String restaurantName) throws RestaurantException {
+		List<Restaurant> restaurant = restaurantServiceImpl.searchRestaurantByName(restaurantName);
 		if (restaurant == null) {
 			throw new RestaurantException("No restaurant found with name: " + restaurantName);
 		}
 		return restaurant;
     }
+	
 
     @GetMapping("/view/{restaurantId}")
     public Restaurant getByRestaurantId(@PathVariable Integer restaurantId) throws RestaurantException {

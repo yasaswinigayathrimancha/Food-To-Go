@@ -30,7 +30,7 @@ public class OrderController {
     
     @PostMapping("/add")         //working    
     public Order saveorder(@RequestBody Order orders) throws OrdersException{
-
+        orders.setOrderStatus("To be delivered");
         return orderServiceImpl.addOrder(orders);
 
     }

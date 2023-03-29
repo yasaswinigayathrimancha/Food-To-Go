@@ -43,7 +43,6 @@ public class Order {
 	
 	@ManyToOne
 	@JoinColumn(name="id")		   
-
 	private User user;
 
 	public MenuItem getMenuitem() {

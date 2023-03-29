@@ -25,6 +25,7 @@ public interface MenuItemService {
 		public List<MenuItem> viewItemsbyRestroid(Integer restaurantId) throws MenuItemException ;
 		
 		public  MenuItem updateMenuItem(Integer itemId, MenuItem menuItem)throws MenuItemException;
-
+		
+         
 
 }

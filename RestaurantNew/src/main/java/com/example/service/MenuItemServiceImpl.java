@@ -7,13 +7,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.entity.MenuItem;
+import com.example.entity.Restaurant;
 import com.example.exceptionhandling.MenuItemException;
 import com.example.repository.MenuItemRepository;
+import com.example.repository.RestaurantRepository;
 
 @Service
 public class MenuItemServiceImpl implements MenuItemService {
+	
 	@Autowired
 	private MenuItemRepository menuItemRepository;
+	
+	@Autowired
+	private RestaurantRepository restaurantRepository;
 	
 	
 	
@@ -91,6 +97,9 @@ public class MenuItemServiceImpl implements MenuItemService {
 		        existingMenuItem.setAvailability(menuItem.getAvailability());
 		        return menuItemRepository.save(existingMenuItem);
 		    }
+
+
+	
 
 	
 
